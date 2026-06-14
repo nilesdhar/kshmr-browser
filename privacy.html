@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy &mdash; KSHMR Project Browser</title>
+  <meta name="description" content="Privacy Policy for KSHMR Project Browser (macOS + iOS)." />
+  <style>
+    :root {
+      --bg: #0f1115;
+      --panel: #171a21;
+      --text: #e7e9ee;
+      --muted: #9aa3b2;
+      --accent: #5b8cff;
+      --border: #232733;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 96px; }
+    h1 { font-size: 2rem; margin: 0 0 6px; letter-spacing: -0.02em; }
+    .updated { color: var(--muted); margin: 0 0 36px; font-size: 0.95rem; }
+    h2 { font-size: 1.25rem; margin: 36px 0 10px; letter-spacing: -0.01em; }
+    h3 { font-size: 1.05rem; margin: 22px 0 6px; }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 14px; padding-left: 22px; }
+    li { margin-bottom: 8px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { background: #11131a; border: 1px solid var(--border); border-radius: 5px; padding: 1px 6px; font-size: 0.9em; }
+    .back { display: inline-block; margin-bottom: 28px; color: var(--muted); }
+    .highlight {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px 6px;
+      margin: 24px 0;
+    }
+    footer {
+      margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--border);
+      color: var(--muted); font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="./index.html">&larr; KSHMR Project Browser</a>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: June 14, 2026</p>
+
+    <p>
+      This Privacy Policy describes how the <strong>KSHMR Project Browser</strong> desktop application
+      (macOS) and its companion iOS application (together, the &ldquo;App&rdquo;) handle your information.
+      Please read it carefully. By using the App you agree to the practices described here.
+    </p>
+
+    <div class="highlight">
+      <h2 style="margin-top:6px;">The short version</h2>
+      <ul>
+        <li>We do <strong>not</strong> operate any server, and we do <strong>not</strong> collect, receive, store, or sell your personal data.</li>
+        <li>The App runs entirely on your own devices.</li>
+        <li>It connects only to services <strong>you</strong> authorize &mdash; your own Dropbox account and, optionally, your own email (SMTP) account.</li>
+        <li>There is <strong>no</strong> analytics, tracking, advertising, or third-party telemetry.</li>
+      </ul>
+    </div>
+
+    <h2>1. Information the App accesses</h2>
+
+    <h3>Files stored on your devices</h3>
+    <p>
+      The App reads your Ableton Live project files (<code>.als</code>) and audio bounces (MP3/WAV)
+      to display details such as project names, BPM, key, track counts, and to play your audio. It
+      stores a local catalog of this information (and your notes, favorites, and playlists) in a
+      database file on your own device. This information never leaves your devices except through the
+      services described below, which you control.
+    </p>
+
+    <h3>Dropbox</h3>
+    <p>
+      When you choose to connect Dropbox, the App accesses <strong>your own Dropbox account</strong>
+      to read your project files and bounce audio, and to read and write a small set of sync files
+      (for example notes and favorites shared between the desktop and iOS apps). Authentication uses
+      Dropbox&rsquo;s standard OAuth flow; your Dropbox login credentials are never seen or stored by
+      the App &mdash; only an access token issued by Dropbox is stored locally on your device (in the
+      macOS Keychain on desktop, and in the system keychain on iOS).
+    </p>
+    <p>The App requests the following Dropbox permissions, each used only for the stated purpose:</p>
+    <ul>
+      <li><code>files.metadata.read</code> &mdash; list and identify your project folders and files.</li>
+      <li><code>files.content.read</code> &mdash; read your <code>.als</code> projects and stream/download your bounce audio.</li>
+      <li><code>files.content.write</code> &mdash; save the small sync files (notes, favorites) back to your Dropbox.</li>
+      <li><code>sharing.read</code> / <code>sharing.write</code> &mdash; look up and create Dropbox share links when you choose to share a bounce.</li>
+    </ul>
+    <p>
+      The App accesses your Dropbox files only to provide its features at your direction. It does not
+      transmit your Dropbox files to us or to any third party. Your use of Dropbox is also governed by
+      <a href="https://www.dropbox.com/privacy" target="_blank" rel="noopener">Dropbox&rsquo;s Privacy Policy</a>.
+    </p>
+
+    <h3>Email (optional)</h3>
+    <p>
+      If you enable email notifications, the App sends email <strong>using your own email account</strong>
+      via the SMTP server and credentials you provide. Those credentials are stored locally on your
+      device (in the macOS Keychain) and are used only to send the messages you configure. We do not
+      receive copies of these emails or your credentials.
+    </p>
+
+    <h2>2. Information we collect</h2>
+    <p>
+      None. The App has no backend service. We do not collect analytics, usage statistics, crash
+      reports, advertising identifiers, or any other personal information. Because we never receive
+      your data, we cannot access, share, or sell it.
+    </p>
+
+    <h2>3. How your information is stored</h2>
+    <p>
+      All app data &mdash; your catalog, notes, favorites, playlists, settings, and access tokens
+      &mdash; is stored locally on your own devices. Access tokens and email credentials are stored in
+      the operating system&rsquo;s secure keychain. Sync files you choose to create are stored in your
+      own Dropbox account.
+    </p>
+
+    <h2>4. Third-party services</h2>
+    <p>
+      The only third-party services the App interacts with are those you explicitly connect:
+      <strong>Dropbox</strong> (for file access and sync) and your own <strong>email provider</strong>
+      (for optional notifications). The App does not integrate any analytics or advertising SDKs.
+    </p>
+
+    <h2>5. Your choices &amp; control</h2>
+    <ul>
+      <li>You can disconnect Dropbox at any time from within the App, which revokes the App&rsquo;s stored access token.</li>
+      <li>You can revoke the App&rsquo;s Dropbox access directly from your <a href="https://www.dropbox.com/account/connected_apps" target="_blank" rel="noopener">Dropbox connected apps</a> page.</li>
+      <li>You can disable email notifications and remove stored email credentials in the App&rsquo;s settings.</li>
+      <li>Uninstalling the App removes its local data from that device.</li>
+    </ul>
+
+    <h2>6. Children&rsquo;s privacy</h2>
+    <p>
+      The App is intended for music producers and is not directed to children under 13, and we do not
+      knowingly collect information from children.
+    </p>
+
+    <h2>7. Changes to this policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Material changes will be reflected by an
+      updated &ldquo;Last updated&rdquo; date on this page.
+    </p>
+
+    <h2>8. Contact</h2>
+    <p>
+      If you have any questions about this Privacy Policy, contact us at
+      <a href="mailto:kshmrbrowser@gmail.com">kshmrbrowser@gmail.com</a>.
+    </p>
+
+    <footer>
+      &copy; 2026 KSHMR Project Browser &middot;
+      <a href="./index.html">Home</a> &middot;
+      <a href="mailto:kshmrbrowser@gmail.com">kshmrbrowser@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>

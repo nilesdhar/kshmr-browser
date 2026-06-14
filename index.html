@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KSHMR Project Browser</title>
+  <meta name="description" content="A macOS companion app for browsing, playing, and organizing your Ableton Live projects and bounces stored in Dropbox." />
+  <style>
+    :root {
+      --bg: #0f1115;
+      --panel: #171a21;
+      --text: #e7e9ee;
+      --muted: #9aa3b2;
+      --accent: #5b8cff;
+      --border: #232733;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 64px 24px 96px; }
+    header { margin-bottom: 48px; }
+    h1 { font-size: 2.4rem; margin: 0 0 12px; letter-spacing: -0.02em; }
+    .tagline { color: var(--muted); font-size: 1.15rem; margin: 0; }
+    h2 { font-size: 1.3rem; margin: 40px 0 12px; letter-spacing: -0.01em; }
+    p { margin: 0 0 16px; }
+    ul { margin: 0 0 16px; padding-left: 22px; }
+    li { margin-bottom: 8px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 28px 8px;
+      margin-bottom: 24px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .pill {
+      display: inline-block;
+      background: rgba(91,140,255,0.12);
+      color: var(--accent);
+      border: 1px solid rgba(91,140,255,0.3);
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: 0.82rem;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="pill">macOS &middot; iOS companion</span>
+      <h1>KSHMR Project Browser</h1>
+      <p class="tagline">Browse, play, and organize your Ableton Live projects and bounces &mdash; right from your Dropbox.</p>
+    </header>
+
+    <div class="card">
+      <h2>What it does</h2>
+      <p>
+        KSHMR Project Browser is a desktop app for music producers who keep their Ableton Live
+        projects in Dropbox. It scans your project folders, reads each <code>.als</code> file for
+        details like BPM, key, and track count, surfaces your bounces (MP3/WAV) for instant playback,
+        and gives you playlists, notes, favorites, and version history across your whole catalog.
+      </p>
+      <ul>
+        <li>Fast browsing of every Ableton project in your Dropbox</li>
+        <li>Built-in audio player and waveform view for your bounces</li>
+        <li>Notes, favorites, playlists, and collaborator tracking</li>
+        <li>Optional email notifications when new bounces are delivered</li>
+        <li>A companion iOS app that streams the same library on the go</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>How Dropbox is used</h2>
+      <p>
+        The app connects to <strong>your own Dropbox account</strong> to read your Ableton projects
+        and bounce audio, and to sync a small set of files (notes, favorites) between the desktop and
+        iOS apps. It only accesses your files at your direction. We do not operate any server &mdash;
+        your data stays between your devices and your Dropbox.
+      </p>
+      <p>See our <a href="./privacy.html">Privacy Policy</a> for the full details.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>
+        Questions, feedback, or support requests:
+        <a href="mailto:kshmrbrowser@gmail.com">kshmrbrowser@gmail.com</a>
+      </p>
+    </div>
+
+    <footer>
+      &copy; 2026 KSHMR Project Browser &middot;
+      <a href="./privacy.html">Privacy Policy</a> &middot;
+      <a href="mailto:kshmrbrowser@gmail.com">kshmrbrowser@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
