@@ -52,33 +52,34 @@
   <div class="wrap">
     <a class="back" href="./index.html">&larr; Enableton</a>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: June 14, 2026</p>
+    <p class="updated">Last updated: July 15, 2026</p>
 
     <p>
-      This Privacy Policy describes how the <strong>Enableton</strong> desktop application
-      (macOS) and its companion iOS application (together, the &ldquo;App&rdquo;) handle your information.
-      Please read it carefully. By using the App you agree to the practices described here.
+      This Privacy Policy describes how the <strong>Enableton</strong> desktop application,
+      its companion iOS application, its licensing and trial services, and its pre-release
+      tester-feedback service (together, the &ldquo;Services&rdquo;) handle information.
     </p>
 
     <div class="highlight">
       <h2 style="margin-top:6px;">The short version</h2>
       <ul>
-        <li>We do <strong>not</strong> operate any server, and we do <strong>not</strong> collect, receive, store, or sell your personal data.</li>
-        <li>The App runs entirely on your own devices.</li>
-        <li>It connects only to services <strong>you</strong> authorize &mdash; your own Dropbox account and, optionally, your own email (SMTP) account.</li>
-        <li>There is <strong>no</strong> analytics, tracking, advertising, or third-party telemetry.</li>
+        <li>Your Ableton projects, audio, catalog, notes, and playlists stay on your devices and in the Dropbox account you authorize. We do not upload that library to Enableton.</li>
+        <li>Licensing and free trials use limited server-side data, including your email, a random app-generated installation ID, and IP-based abuse controls.</li>
+        <li>Some pre-release tester builds can send feedback and automatic error diagnostics. You can turn that channel off in Settings.</li>
+        <li>We do <strong>not</strong> sell personal information, run advertising, or use third-party product analytics or behavioral tracking.</li>
       </ul>
     </div>
 
-    <h2>1. Information the App accesses</h2>
+    <h2>1. Information kept on your devices</h2>
 
     <h3>Files stored on your devices</h3>
     <p>
       The App reads your Ableton Live project files (<code>.als</code>) and audio bounces (MP3/WAV)
       to display details such as project names, BPM, key, track counts, and to play your audio. It
-      stores a local catalog of this information (and your notes, favorites, and playlists) in a
-      database file on your own device. This information never leaves your devices except through the
-      services described below, which you control.
+      stores a local catalog of this information (and your notes, favorites, playlists, settings,
+      and activity history) on your device. This library information is not sent to Enableton.
+      It leaves your device only when you direct the App to use a connected service, such as Dropbox,
+      your email provider, or a share destination.
     </p>
 
     <h3>Dropbox</h3>
@@ -86,9 +87,9 @@
       When you choose to connect Dropbox, the App accesses <strong>your own Dropbox account</strong>
       to read your project files and bounce audio, and to read and write a small set of sync files
       (for example notes and favorites shared between the desktop and iOS apps). Authentication uses
-      Dropbox&rsquo;s standard OAuth flow; your Dropbox login credentials are never seen or stored by
-      the App &mdash; only an access token issued by Dropbox is stored locally on your device (in the
-      macOS Keychain on desktop, and in the system keychain on iOS).
+      Dropbox&rsquo;s standard OAuth flow; your Dropbox password is never seen or stored by Enableton.
+      An access token issued by Dropbox is stored locally using operating-system-protected encrypted
+      storage on desktop and the system keychain on iOS.
     </p>
     <p>The App requests the following Dropbox permissions, each used only for the stated purpose:</p>
     <ul>
@@ -99,70 +100,129 @@
     </ul>
     <p>
       The App accesses your Dropbox files only to provide its features at your direction. It does not
-      transmit your Dropbox files to us or to any third party. Your use of Dropbox is also governed by
+      transmit your Dropbox library to Enableton. Your use of Dropbox is also governed by
       <a href="https://www.dropbox.com/privacy" target="_blank" rel="noopener">Dropbox&rsquo;s Privacy Policy</a>.
     </p>
 
     <h3>Email (optional)</h3>
     <p>
       If you enable email notifications, the App sends email <strong>using your own email account</strong>
-      via the SMTP server and credentials you provide. Those credentials are stored locally on your
-      device (in the macOS Keychain) and are used only to send the messages you configure. We do not
-      receive copies of these emails or your credentials.
+      via the SMTP server and credentials you provide. Those credentials are encrypted locally using
+      operating-system-protected storage and are used only to send the messages you configure. We do
+      not receive your SMTP password or copies of those emails.
     </p>
 
-    <h2>2. Information we collect</h2>
+    <h2>2. Licensing, purchases, and free trials</h2>
     <p>
-      None. The App has no backend service. We do not collect analytics, usage statistics, crash
-      reports, advertising identifiers, or any other personal information. Because we never receive
-      your data, we cannot access, share, or sell it.
+      The desktop App checks license status with <strong>Polar</strong>, our licensing and
+      merchant-of-record provider. When you buy, activate, or validate a license, Polar may process
+      your email, transaction and customer records, license-key and device-activation information,
+      your computer hostname as an activation label, and payment information. Enableton does not
+      receive your full payment-card number.
     </p>
-
-    <h2>3. How your information is stored</h2>
     <p>
-      All app data &mdash; your catalog, notes, favorites, playlists, settings, and access tokens
-      &mdash; is stored locally on your own devices. Access tokens and email credentials are stored in
-      the operating system&rsquo;s secure keychain. Sync files you choose to create are stored in your
-      own Dropbox account.
+      If you request a free trial, the trial service processes:
     </p>
-
-    <h2>4. Third-party services</h2>
-    <p>
-      The only third-party services the App interacts with are those you explicitly connect:
-      <strong>Dropbox</strong> (for file access and sync) and your own <strong>email provider</strong>
-      (for optional notifications). The App does not integrate any analytics or advertising SDKs.
-    </p>
-
-    <h2>5. Your choices &amp; control</h2>
     <ul>
-      <li>You can disconnect Dropbox at any time from within the App, which revokes the App&rsquo;s stored access token.</li>
-      <li>You can revoke the App&rsquo;s Dropbox access directly from your <a href="https://www.dropbox.com/account/connected_apps" target="_blank" rel="noopener">Dropbox connected apps</a> page.</li>
-      <li>You can disable email notifications and remove stored email credentials in the App&rsquo;s settings.</li>
-      <li>Uninstalling the App removes its local data from that device.</li>
+      <li><strong>Email address</strong> &mdash; to send a one-time verification code, prove control of the address, create the Polar customer and $0 trial order, and enforce one trial per address.</li>
+      <li><strong>Random installation ID</strong> &mdash; generated by the App rather than taken from a hardware serial number, used to enforce one trial per installation. The server stores a keyed one-way representation for eligibility.</li>
+      <li><strong>IP address</strong> &mdash; used in transit for rate limiting and abuse prevention and passed to Polar when the trial checkout is created. Enableton&rsquo;s trial database stores only a keyed one-way IP value in short-lived rate counters, although infrastructure providers may process ordinary request metadata under their own policies.</li>
+      <li><strong>Trial records</strong> &mdash; verification status, encrypted email and license material, Polar customer/order/grant/license identifiers, timestamps, and the keyed email and installation eligibility indexes needed to issue or recover exactly one trial.</li>
+    </ul>
+    <p>
+      Trial emails are service messages only. Requesting a code or trial does not subscribe you to
+      marketing.
+    </p>
+
+    <h2>3. Pre-release tester feedback and diagnostics</h2>
+    <p>
+      Some packaged pre-release tester builds include a tester-feedback channel that is on by default
+      and can be turned off in Settings. When it is on, uncaught application errors may be sent
+      automatically with the error message and stack, source window, App version, timestamp, computer
+      hostname or optional tester name, and recent warning/error log context. Log context can contain
+      file paths, filenames, or other details printed while diagnosing a failure.
+    </p>
+    <p>
+      Feedback you compose is sent only when you press Send. It includes your message, App version,
+      timestamp, and hostname or optional tester name; a recent log is attached only when you select
+      that option. Project notes are not automatically submitted. Feedback and diagnostics pass
+      through Vercel and Resend to the Enableton maintainer&rsquo;s inbox. This channel is for testing and
+      support, not advertising or behavior analytics. The feedback endpoint also uses the source IP
+      in temporary server memory for rate limiting; Vercel may process ordinary request metadata.
+    </p>
+
+    <h2>4. Service providers</h2>
+    <p>We use the following providers for the limited purposes described above:</p>
+    <ul>
+      <li><a href="https://polar.sh/legal/privacy-policy" target="_blank" rel="noopener">Polar</a> &mdash; purchases, $0 trial orders, customer records, license issuance, activation, and validation.</li>
+      <li><a href="https://vercel.com/legal/privacy-notice" target="_blank" rel="noopener">Vercel</a> &mdash; hosting the licensing/trial and tester-feedback endpoints.</li>
+      <li><a href="https://upstash.com/static/trust/privacy.pdf" target="_blank" rel="noopener">Upstash</a> &mdash; Redis storage for trial challenges, rate limits, eligibility indexes, and recoverable issuance operations.</li>
+      <li><a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">Resend</a> &mdash; delivery of trial verification codes and forwarding of tester feedback/diagnostics.</li>
+      <li><a href="https://www.dropbox.com/privacy" target="_blank" rel="noopener">Dropbox</a> and your chosen email provider &mdash; only when you connect or use those App features.</li>
+      <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Pages</a> &mdash; hosting this public policy page.</li>
     </ul>
 
-    <h2>6. Children&rsquo;s privacy</h2>
+    <h2>5. Retention</h2>
+    <ul>
+      <li>Trial verification challenges expire after 15 minutes. Trial rate-limit counters normally expire within one hour.</li>
+      <li>Trial eligibility indexes and encrypted recoverable issuance records are retained for up to two years. This prevents duplicate trials and lets an interrupted issuance return the same trial instead of creating another order or key.</li>
+      <li>Polar retains customer, order, licensing, and transaction records under its policy and any legal or accounting duties that apply to it as merchant of record.</li>
+      <li>Tester feedback and diagnostics are retained in the maintainer&rsquo;s inbox as needed to investigate and improve the App, or until a valid deletion request, subject to security, backup, and legal requirements.</li>
+      <li>Local App data remains on your device until you remove it. Removing the application itself may not remove its Application Support data. Dropbox sync data remains in your Dropbox until you delete it.</li>
+    </ul>
+
+    <h2>6. Sharing and sale</h2>
+    <p>
+      We share information only with the service providers above, at your direction, or when required
+      to comply with law, protect users and the Services, or establish or defend legal claims. We do
+      not sell personal information, share it for cross-context behavioral advertising, or use it for
+      targeted advertising.
+    </p>
+
+    <h2>7. Security and international processing</h2>
+    <p>
+      License credentials and sensitive local credentials are encrypted at rest. Trial eligibility
+      values use purpose-separated keyed hashes, recoverable trial fields are encrypted, and trial
+      responses are marked not to be cached. No security method is perfect. Our providers may process
+      information in the United States and other countries as described in their policies.
+    </p>
+
+    <h2>8. Your choices and privacy rights</h2>
+    <ul>
+      <li>Turn off the tester-feedback channel in Settings to stop future automatic diagnostic reports and feedback submissions.</li>
+      <li>Disconnect Dropbox in the App and revoke access from your <a href="https://www.dropbox.com/account/connected_apps" target="_blank" rel="noopener">Dropbox connected apps</a> page.</li>
+      <li>Disable email notifications and remove the locally stored email credential in Settings.</li>
+      <li>Contact us to request access, correction, or deletion of trial, feedback, or other information controlled by Enableton. We may need to verify the request and may retain limited information where required for fraud prevention, security, legal obligations, or legal claims. Deleting a record does not create eligibility for another free trial.</li>
+      <li>Contact Polar or another provider directly about information it controls under its own policy.</li>
+    </ul>
+    <p>
+      Depending on where you live, applicable law may provide additional rights such as restriction,
+      objection, portability, withdrawal of consent, or an appeal or complaint to a privacy regulator.
+      We will not discriminate against you for exercising applicable privacy rights.
+    </p>
+
+    <h2>9. Children&rsquo;s privacy</h2>
     <p>
       The App is intended for music producers and is not directed to children under 13, and we do not
       knowingly collect information from children.
     </p>
 
-    <h2>7. Changes to this policy</h2>
+    <h2>10. Changes to this policy</h2>
     <p>
       We may update this Privacy Policy from time to time. Material changes will be reflected by an
       updated &ldquo;Last updated&rdquo; date on this page.
     </p>
 
-    <h2>8. Contact</h2>
+    <h2>11. Contact</h2>
     <p>
-      If you have any questions about this Privacy Policy, contact us at
-      <a href="mailto:kshmrbrowser@gmail.com">kshmrbrowser@gmail.com</a>.
+      For privacy questions or access, correction, and deletion requests, contact
+      <a href="mailto:kshmrtools@gmail.com">kshmrtools@gmail.com</a>.
     </p>
 
     <footer>
       &copy; 2026 Enableton &middot;
       <a href="./index.html">Home</a> &middot;
-      <a href="mailto:kshmrbrowser@gmail.com">kshmrbrowser@gmail.com</a>
+      <a href="mailto:kshmrtools@gmail.com">kshmrtools@gmail.com</a>
     </footer>
   </div>
 </body>
